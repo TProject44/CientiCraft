@@ -54,6 +54,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "recipe"
+    },
+    {
+      "name": "Ceringaaranha",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringaaranha"
+    },
+    {
+      "name": "Ceringaovelha",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringaovelha"
+    },
+    {
+      "name": "Ceringavacacogumelo",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringavacacogumelo"
     }
   ],
   "variable_elements": [],
@@ -63,7 +90,10 @@
       "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
       "itemGroup.tabtab_1": "DNA",
       "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
+      "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
+      "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
+      "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
       "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
     }
   },

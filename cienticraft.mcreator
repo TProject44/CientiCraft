@@ -45,6 +45,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tab_1"
+    },
+    {
+      "name": "Recipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipe"
     }
   ],
   "variable_elements": [],

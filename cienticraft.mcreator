@@ -1,10 +1,62 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Ceringa",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringa"
+    },
+    {
+      "name": "Ceringavaca",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringavaca"
+    },
+    {
+      "name": "Ceringagalinha",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringagalinha"
+    },
+    {
+      "name": "Ceringaorco",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringaorco"
+    },
+    {
+      "name": "TAB1",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tab_1"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
+      "itemGroup.tabtab_1": "DNA",
+      "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
+      "item.cienticraft.ceringa": "Ceringa vazia",
+      "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
+    }
   },
   "workspaceSettings": {
     "modid": "cienticraft",

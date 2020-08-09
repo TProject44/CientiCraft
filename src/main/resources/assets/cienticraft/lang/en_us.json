@@ -1,10 +1,14 @@
 {
   "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
+  "item.cienticraft.ceringaporco": "Ceringa Porco DNA",
+  "item.cienticraft.ceringa": "Ceringa vazia",
+  "item.cienticraft.ceringapanda": "Ceringa Panda DNA",
+  "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
+  "item.cienticraft.ceringafoz": "Ceringa Raposa DNA",
   "itemGroup.tabtab_1": "DNA",
   "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
   "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
-  "item.cienticraft.ceringa": "Ceringa vazia",
-  "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
+  "item.cienticraft.ceringazombi": "Ceringa Zumbi DNA",
   "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
   "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
 }

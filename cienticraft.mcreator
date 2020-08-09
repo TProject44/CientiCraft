@@ -81,6 +81,33 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ceringavacacogumelo"
+    },
+    {
+      "name": "Ceringapanda",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringapanda"
+    },
+    {
+      "name": "CERINGAFOZ",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringafoz"
+    },
+    {
+      "name": "Ceringazombi",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringazombi"
     }
   ],
   "variable_elements": [],
@@ -93,8 +120,11 @@
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
       "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
+      "item.cienticraft.ceringapanda": "Ceringa Panda DNA",
+      "item.cienticraft.ceringazombi": "Ceringa Zumbi DNA",
       "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
-      "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
+      "item.cienticraft.ceringaorco": "Ceringa Porco DNA",
+      "item.cienticraft.ceringafoz": "Ceringa Raposa DNA"
     }
   },
   "workspaceSettings": {

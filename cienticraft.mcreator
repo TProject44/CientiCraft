@@ -129,6 +129,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "CeringaFox",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringa_fox"
     }
   ],
   "variable_elements": [],

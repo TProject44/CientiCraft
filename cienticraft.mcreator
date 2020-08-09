@@ -74,15 +74,6 @@
       "registry_name": "ceringavacacogumelo"
     },
     {
-      "name": "CERINGAFOZ",
-      "type": "item",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ceringafoz"
-    },
-    {
       "name": "Ceringazombi",
       "type": "item",
       "sortid": 12,
@@ -129,6 +120,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "CeringaFox",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringa_fox"
     }
   ],
   "variable_elements": [],
@@ -136,11 +136,15 @@
   "language_map": {
     "en_us": {
       "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
+      "item.cienticraft.ceringaporco": "Ceringa Porco DNA",
+      "item.cienticraft.ceringa": "Ceringa vazia",
+      "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
+      "item.cienticraft.ceringapanda": "Ceringa Panda DNA",
       "itemGroup.tabtab_1": "DNA",
       "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
-      "item.cienticraft.ceringa": "Ceringa vazia",
-      "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
+      "item.cienticraft.ceringa_fox": "Ceringa Raposa DNA",
+      "item.cienticraft.ceringazombi": "Ceringa Zumbi DNA",
       "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
       "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
     }

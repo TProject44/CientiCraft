@@ -4,18 +4,18 @@ package net.mcreator.cienticraft.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.cienticraft.itemgroup.TAB1ItemGroup;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 @CienticraftModElements.ModElement.Tag
-public class CeringaFoxItem extends CienticraftModElements.ModElement {
-	@ObjectHolder("cienticraft:ceringa_fox")
+public class TUBOPORCOItem extends CienticraftModElements.ModElement {
+	@ObjectHolder("cienticraft:tuboporco")
 	public static final Item block = null;
-	public CeringaFoxItem(CienticraftModElements instance) {
-		super(instance, 13);
+	public TUBOPORCOItem(CienticraftModElements instance) {
+		super(instance, 17);
 	}
 
 	@Override
@@ -24,8 +24,8 @@ public class CeringaFoxItem extends CienticraftModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(TAB1ItemGroup.tab).maxStackSize(64));
-			setRegistryName("ceringa_fox");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
+			setRegistryName("tuboporco");
 		}
 
 		@Override

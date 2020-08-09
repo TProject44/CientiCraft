@@ -74,15 +74,6 @@
       "registry_name": "ceringavacacogumelo"
     },
     {
-      "name": "CERINGAFOZ",
-      "type": "item",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ceringafoz"
-    },
-    {
       "name": "Ceringazombi",
       "type": "item",
       "sortid": 12,
@@ -138,6 +129,78 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ceringa_fox"
+    },
+    {
+      "name": "Tubo",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tubo"
+    },
+    {
+      "name": "Tab2",
+      "type": "tab",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tab_2"
+    },
+    {
+      "name": "Tubovaca",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tubovaca"
+    },
+    {
+      "name": "TUBOPORCO",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tuboporco"
+    },
+    {
+      "name": "Tab3",
+      "type": "tab",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tab_3"
+    },
+    {
+      "name": "Tubogalinha",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tubogalinha"
+    },
+    {
+      "name": "Tuboaranha",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tuboaranha"
+    },
+    {
+      "name": "Tuboovelha",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tuboovelha"
     }
   ],
   "variable_elements": [],
@@ -146,16 +209,24 @@
     "en_us": {
       "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
       "item.cienticraft.ceringaporco": "Ceringa Porco DNA",
+      "item.cienticraft.tuboovelha": "Tubo de Ensaio OvelhaDNA",
+      "item.cienticraft.tubovaca": "Tubo de Ensaio VacaDNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
       "item.cienticraft.ceringapanda": "Ceringa Panda DNA",
       "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
-      "item.cienticraft.ceringafoz": "Ceringa Raposa DNA",
+      "item.cienticraft.tubogalinha": "Tubo de Ensaio GalinhaDNA",
+      "item.cienticraft.tuboaranha": "Tubo de Ensaio AranhaDNA",
+      "item.cienticraft.tubo": "Tubo de Ensaio",
       "itemGroup.tabtab_1": "DNA",
       "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
+      "itemGroup.tabtab_2": "Utensilios",
+      "item.cienticraft.ceringa_fox": "Ceringa Raposa DNA",
+      "itemGroup.tabtab_3": "Tubos de Ensaio",
       "item.cienticraft.ceringazombi": "Ceringa Zumbi DNA",
       "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
-      "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
+      "item.cienticraft.ceringaorco": "Ceringa Porco DNA",
+      "item.cienticraft.tuboporco": "Tubo de Ensaio PorcoDNA"
     }
   },
   "workspaceSettings": {

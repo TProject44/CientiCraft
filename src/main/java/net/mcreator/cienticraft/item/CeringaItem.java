@@ -24,7 +24,7 @@ public class CeringaItem extends CienticraftModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(64));
+			super(new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(1));
 			setRegistryName("ceringa");
 		}
 

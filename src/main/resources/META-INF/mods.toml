@@ -7,7 +7,7 @@ version="1.0.0"
 displayName="cienticraft"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
-authors="ADMIN, MCreator"
+authors="RoyGameplay, AHLZ"
 
 [[dependencies.cienticraft]]
     modId="minecraft"

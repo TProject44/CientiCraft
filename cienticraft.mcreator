@@ -29,15 +29,6 @@
       "registry_name": "ceringagalinha"
     },
     {
-      "name": "Ceringaorco",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ceringaorco"
-    },
-    {
       "name": "TAB1",
       "type": "tab",
       "sortid": 5,
@@ -81,6 +72,36 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ceringavacacogumelo"
+    },
+    {
+      "name": "ColetaDNAProcedure",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coleta_dna_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ceringaporco",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringaporco"
     }
   ],
   "variable_elements": [],
@@ -88,20 +109,20 @@
   "language_map": {
     "en_us": {
       "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
+      "item.cienticraft.ceringaporco": "Ceringa Porco DNA",
       "itemGroup.tabtab_1": "DNA",
       "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
       "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
-      "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
-      "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
+      "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA"
     }
   },
   "workspaceSettings": {
     "modid": "cienticraft",
     "modName": "cienticraft",
     "version": "1.0.0",
-    "author": "ADMIN, MCreator",
+    "author": "RoyGameplay, AHLZ",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -110,6 +131,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.cienticraft",
     "lockBaseModFiles": false
   },

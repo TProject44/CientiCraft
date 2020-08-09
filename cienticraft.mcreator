@@ -29,15 +29,6 @@
       "registry_name": "ceringagalinha"
     },
     {
-      "name": "Ceringaorco",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ceringaorco"
-    },
-    {
       "name": "TAB1",
       "type": "tab",
       "sortid": 5,
@@ -83,15 +74,6 @@
       "registry_name": "ceringavacacogumelo"
     },
     {
-      "name": "Ceringapanda",
-      "type": "item",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ceringapanda"
-    },
-    {
       "name": "CERINGAFOZ",
       "type": "item",
       "sortid": 11,
@@ -108,6 +90,45 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "ceringazombi"
+    },
+    {
+      "name": "Ceringapanda",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringapanda"
+    },
+    {
+      "name": "Ceringaporco",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ceringaporco"
+    },
+    {
+      "name": "ColetaDNAProcedure",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coleta_dna_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -120,11 +141,8 @@
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
       "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
-      "item.cienticraft.ceringapanda": "Ceringa Panda DNA",
-      "item.cienticraft.ceringazombi": "Ceringa Zumbi DNA",
       "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
-      "item.cienticraft.ceringaorco": "Ceringa Porco DNA",
-      "item.cienticraft.ceringafoz": "Ceringa Raposa DNA"
+      "item.cienticraft.ceringaorco": "Ceringa Porco DNA"
     }
   },
   "workspaceSettings": {

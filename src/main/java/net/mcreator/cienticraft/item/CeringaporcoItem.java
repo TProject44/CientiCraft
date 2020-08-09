@@ -1,31 +1,26 @@
 
 package net.mcreator.cienticraft.item;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.cienticraft.itemgroup.TAB1ItemGroup;
-import net.mcreator.cienticraft.CienticraftModElements;
-
 @CienticraftModElements.ModElement.Tag
-public class CeringaorcoItem extends CienticraftModElements.ModElement {
-	@ObjectHolder("cienticraft:ceringaorco")
+public class CeringaporcoItem extends CienticraftModElements.ModElement {
+
+	@ObjectHolder("cienticraft:ceringaporco")
 	public static final Item block = null;
-	public CeringaorcoItem(CienticraftModElements instance) {
-		super(instance, 4);
+
+	public CeringaporcoItem(CienticraftModElements instance) {
+		super(instance, 11);
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemCustom());
 	}
+
 	public static class ItemCustom extends Item {
+
 		public ItemCustom() {
 			super(new Item.Properties().group(TAB1ItemGroup.tab).maxStackSize(64));
-			setRegistryName("ceringaorco");
+			setRegistryName("ceringaporco");
 		}
 
 		@Override
@@ -42,5 +37,7 @@ public class CeringaorcoItem extends CienticraftModElements.ModElement {
 		public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 			return 1F;
 		}
+
 	}
+
 }

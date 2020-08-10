@@ -246,6 +246,111 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "recipetubo_1"
+    },
+    {
+      "name": "Recipetubovaca",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubovaca"
+    },
+    {
+      "name": "Recipetubogalinha",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubogalinha"
+    },
+    {
+      "name": "Recipetuboaranha",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboaranha"
+    },
+    {
+      "name": "Recipetuboovelha",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboovelha"
+    },
+    {
+      "name": "Recipetubovacacogumelo",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubovacacogumelo"
+    },
+    {
+      "name": "Recipetubozombi",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubozombi"
+    },
+    {
+      "name": "Recipetubopanda",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubopanda"
+    },
+    {
+      "name": "Recipetubofox",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubofox"
+    },
+    {
+      "name": "QuandoAlgoForCraftado",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quando_algo_for_craftado",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

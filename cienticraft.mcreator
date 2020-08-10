@@ -237,6 +237,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tubofox"
+    },
+    {
+      "name": "Recipetubo1",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubo_1"
     }
   ],
   "variable_elements": [],

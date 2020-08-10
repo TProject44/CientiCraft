@@ -4,10 +4,10 @@ package net.mcreator.cienticraft.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.cienticraft.itemgroup.Tab2ItemGroup;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 @CienticraftModElements.ModElement.Tag
@@ -24,7 +24,7 @@ public class CeringaItem extends CienticraftModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.DECORATIONS).maxStackSize(1));
+			super(new Item.Properties().group(Tab2ItemGroup.tab).maxStackSize(1));
 			setRegistryName("ceringa");
 		}
 

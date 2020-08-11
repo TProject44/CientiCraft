@@ -6,11 +6,12 @@ import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.cienticraft.item.TubovacaItem;
 import net.mcreator.cienticraft.item.CeringaItem;
 import net.mcreator.cienticraft.CienticraftModElements;
 
@@ -50,7 +51,8 @@ public class QuandoAlgoForCraftadoProcedure extends CienticraftModElements.ModEl
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((itemstack).copy()).getItem() == new ItemStack(TubovacaItem.block, (int) (1)).getItem())) {
+		if ((ItemTags.getCollection().getOrCreate(new ResourceLocation(("tubo_dna_mob").toLowerCase(java.util.Locale.ENGLISH)))
+				.contains((itemstack).getItem()))) {
 			if (!world.getWorld().isRemote) {
 				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z, new ItemStack(CeringaItem.block, (int) (1)));
 				entityToSpawn.setPickupDelay(10);

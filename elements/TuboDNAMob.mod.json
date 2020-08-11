@@ -1,0 +1,40 @@
+{
+  "_fv": 10,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Tubovaca"
+      },
+      {
+        "value": "CUSTOM:TUBOPORCO"
+      },
+      {
+        "value": "CUSTOM:Tubogalinha"
+      },
+      {
+        "value": "CUSTOM:Tuboaranha"
+      },
+      {
+        "value": "CUSTOM:Tuboovelha"
+      },
+      {
+        "value": "CUSTOM:Tubovacacogumelo"
+      },
+      {
+        "value": "CUSTOM:Tubozombi"
+      },
+      {
+        "value": "CUSTOM:Tubopanda"
+      },
+      {
+        "value": "CUSTOM:Tubofox"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "tubo_dna_mob",
+    "namespace": "minecraft"
+  }
+}

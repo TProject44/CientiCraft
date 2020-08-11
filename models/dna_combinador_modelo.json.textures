@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "texture",
+        "2": "texture2",
+        "3": "blue_ice",
+        "4": "texture3",
+        "5": "texture4",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

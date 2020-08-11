@@ -1,0 +1,13 @@
+{
+  "parent": "cienticraft:custom/dna_combinador_modelo",
+  "textures": {
+    "all": "cienticraft:blocks/texture4",
+    "particle": "cienticraft:blocks/texture4",
+    "1": "cienticraft:blocks/texture",
+    "2": "cienticraft:blocks/texture2",
+    "3": "cienticraft:blocks/blue_ice",
+    "4": "cienticraft:blocks/texture3",
+    "5": "cienticraft:blocks/texture4",
+    "missing": "cienticraft:blocks/"
+  }
+}

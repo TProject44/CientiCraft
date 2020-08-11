@@ -246,6 +246,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "recipetubo_1"
+    },
+    {
+      "name": "CombinadordeDNA",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "combinadorde_dna"
     }
   ],
   "variable_elements": [],
@@ -255,6 +264,7 @@
       "item.cienticraft.ceringaporco": "Ceringa Porco DNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
       "item.cienticraft.tuboaranha": "Tubo de Ensaio AranhaDNA",
+      "block.cienticraft.combinadorde_dna": "Combinador de DNA",
       "item.cienticraft.tubo": "Tubo de Ensaio",
       "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
       "item.cienticraft.ceringa_fox": "Ceringa Raposa DNA",

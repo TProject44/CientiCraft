@@ -255,6 +255,120 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "combinadorde_dna"
+    },
+    {
+      "name": "QuandoAlgoForCraftado",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quando_algo_for_craftado",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Recipetubogalinha",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubogalinha"
+    },
+    {
+      "name": "Recipetubopanda",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubopanda"
+    },
+    {
+      "name": "Recipetubovaca",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubovaca"
+    },
+    {
+      "name": "Recipetubovacacogumelo",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubovacacogumelo"
+    },
+    {
+      "name": "Recipetubofox",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubofox"
+    },
+    {
+      "name": "Recipetuboaranha",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboaranha"
+    },
+    {
+      "name": "TuboDNAMob",
+      "type": "tag",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tubo_dna_mob"
+    },
+    {
+      "name": "Recipetuboovelha",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboovelha"
+    },
+    {
+      "name": "Recipetubozombi",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubozombi"
     }
   ],
   "variable_elements": [],
@@ -286,6 +400,32 @@
       "item.cienticraft.tubovacacogumelo": "Tubo de Ensaio VacaCogumelo DNA",
       "itemGroup.tabtab_3": "Tubos de Ensaio",
       "item.cienticraft.tuboporco": "Tubo de Ensaio PorcoDNA"
+    },
+    "pt_br": {
+      "item.cienticraft.ceringaporco": "Seringa Porco DNA",
+      "item.cienticraft.ceringa": "Seringa vazia",
+      "item.cienticraft.tuboaranha": "Tubo de Ensaio com DNA de Aranha",
+      "item.cienticraft.tubo": "Tubo de Ensaio",
+      "item.cienticraft.ceringavaca": "Seringa com DNA de Vaca",
+      "item.cienticraft.ceringa_fox": "Seringa Raposa DNA",
+      "item.cienticraft.ceringazombi": "Seringa com DNA de Zumbi",
+      "item.cienticraft.ceringaaranha": "Seringa com DNA de aranha",
+      "item.cienticraft.ceringaorco": "Seringa com DNA de porco",
+      "item.cienticraft.ceringagalinha": "Seringa com DNA de galinha",
+      "item.cienticraft.tubozombi": "Tubo de Ensaio com DNA de Zumbi",
+      "item.cienticraft.tuboovelha": "Tubo de Ensaio com DNA de Ovelha",
+      "item.cienticraft.tubovaca": "Tubo de Ensaio com DNA de Vaca",
+      "item.cienticraft.ceringapanda": "Seringa com DNA de panda",
+      "item.cienticraft.ceringaovelha": "Seringa com DNA de ovelha",
+      "item.cienticraft.tubopanda": "Tubo de Ensaio com DNA de Panda",
+      "item.cienticraft.tubogalinha": "Tubo de Ensaio com DNA de Galinha",
+      "item.cienticraft.tubofox": "Tubo de Ensaio com DNA de Raposa",
+      "itemGroup.tabtab_1": "DNA",
+      "item.cienticraft.ceringavacacogumelo": "Seringa com DNA de vaca-cogumelo",
+      "itemGroup.tabtab_2": "Utensílios",
+      "item.cienticraft.tubovacacogumelo": "Tubo de Ensaio com DNA de Vaca-cogumelo",
+      "itemGroup.tabtab_3": "Tubos de Ensaio",
+      "item.cienticraft.tuboporco": "Tubo de Ensaio com DNA de Porco"
     }
   },
   "workspaceSettings": {

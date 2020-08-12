@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cienticraft:items/syringe_-_sangue_aranha"
+  }
+}

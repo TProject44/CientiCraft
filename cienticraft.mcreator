@@ -371,15 +371,6 @@
       "registry_name": "recipetubozombi"
     },
     {
-      "name": "Sanguezumbi",
-      "type": "item",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sanguezumbi"
-    },
-    {
       "name": "Sanguecoguvaca",
       "type": "item",
       "sortid": 39,
@@ -387,24 +378,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sanguecoguvaca"
-    },
-    {
-      "name": "Sanguearanha",
-      "type": "item",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sanguearanha"
-    },
-    {
-      "name": "SanguedeVaca",
-      "type": "item",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sanguede_vaca"
     },
     {
       "name": "SanguedeGalinha",
@@ -416,15 +389,6 @@
       "registry_name": "sanguede_galinha"
     },
     {
-      "name": "SanguedePorco",
-      "type": "item",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "sanguede_porco"
-    },
-    {
       "name": "SanguedeOvelha",
       "type": "item",
       "sortid": 44,
@@ -432,6 +396,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sanguede_ovelha"
+    },
+    {
+      "name": "SanguedeVaca",
+      "type": "item",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sanguede_vaca"
+    },
+    {
+      "name": "SangedeRaposa",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangede_raposa"
     },
     {
       "name": "SanguedePanda",
@@ -443,46 +425,75 @@
       "registry_name": "sanguede_panda"
     },
     {
-      "name": "SangedeRaposa",
+      "name": "Sanguezumbi",
       "type": "item",
-      "sortid": 46,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sangede_raposa"
+      "registry_name": "sanguezumbi"
+    },
+    {
+      "name": "SanguedePorco",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sanguede_porco"
+    },
+    {
+      "name": "Sanguearanha",
+      "type": "item",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sanguearanha"
+    },
+    {
+      "name": "CombinadordeDNAUpdateTick",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "combinadorde_dna_update_tick",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CombinadorDNAGUI",
+      "type": "gui",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "combinador_dnagui"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.cienticraft.sangede_raposa": "Sange de Raposa",
       "item.cienticraft.ceringaporco": "Ceringa Porco DNA",
       "item.cienticraft.ceringa": "Ceringa vazia",
-      "item.cienticraft.sanguede_panda": "Sangue de Panda",
-      "item.cienticraft.tuboaranha": "Tubo de Ensaio AranhaDNA",
       "block.cienticraft.combinadorde_dna": "Combinador de DNA",
+      "item.cienticraft.tuboaranha": "Tubo de Ensaio AranhaDNA",
       "item.cienticraft.tubo": "Tubo de Ensaio",
-      "item.cienticraft.sanguecoguvaca": "Sangue de VacaCogumelo",
       "item.cienticraft.ceringavaca": "Ceringa Vaca DNA",
       "item.cienticraft.ceringa_fox": "Ceringa Raposa DNA",
       "item.cienticraft.ceringazombi": "Ceringa Zumbi DNA",
       "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
-      "item.cienticraft.ceringaorco": "Ceringa Porco DNA",
-      "item.cienticraft.sanguearanha": "Sangue de Aranha",
       "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
       "item.cienticraft.tubozombi": "Tubo de Ensaio ZumbiDNA",
       "item.cienticraft.tuboovelha": "Tubo de Ensaio OvelhaDNA",
       "item.cienticraft.tubovaca": "Tubo de Ensaio VacaDNA",
-      "item.cienticraft.sanguede_galinha": "Sangue de Galinha",
-      "item.cienticraft.sanguede_vaca": "Sangue de Vaca",
       "item.cienticraft.ceringapanda": "Ceringa Panda DNA",
       "item.cienticraft.ceringaovelha": "Ceringa Ovelha  DNA",
       "item.cienticraft.tubopanda": "Tubo de Ensaio PandaDNA",
-      "item.cienticraft.sanguede_ovelha": "Sangue de Ovelha",
       "item.cienticraft.tubogalinha": "Tubo de Ensaio GalinhaDNA",
-      "item.cienticraft.sanguezumbi": "Sangue de Zumbi",
-      "item.cienticraft.sanguede_porco": "Sangue de Porco",
       "item.cienticraft.tubofox": "Tubo de Ensaio RaposaDNA",
       "itemGroup.tabtab_1": "DNA",
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",

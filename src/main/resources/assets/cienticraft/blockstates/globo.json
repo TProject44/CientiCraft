@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cienticraft:block/globo"
+    },
+    "facing=east": {
+      "model": "cienticraft:block/globo",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cienticraft:block/globo",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cienticraft:block/globo",
+      "y": 270
+    }
+  }
+}

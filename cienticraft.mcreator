@@ -468,6 +468,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tubo_contaminado"
+    },
+    {
+      "name": "Globo",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "globo"
     }
   ],
   "variable_elements": [],
@@ -479,6 +488,7 @@
       "item.cienticraft.ceringacontaminada": "Ceringa Contaminada",
       "item.cienticraft.ceringa": "Ceringa vazia",
       "item.cienticraft.sanguede_panda": "Sangue de Panda",
+      "block.cienticraft.globo": "Globo Terrestre",
       "item.cienticraft.tuboaranha": "Tubo de Ensaio AranhaDNA",
       "block.cienticraft.combinadorde_dna": "Combinador de DNA",
       "item.cienticraft.tubo": "Tubo de Ensaio",
@@ -516,6 +526,7 @@
       "item.cienticraft.ceringacontaminada": "Ceringa Contaminada",
       "item.cienticraft.ceringa": "Seringa vazia",
       "item.cienticraft.sanguede_panda": "Sangue de Panda",
+      "block.cienticraft.globo": "Globo Terrestre",
       "block.cienticraft.combinadorde_dna": "Combinador de DNA",
       "item.cienticraft.tuboaranha": "Tubo de Ensaio com DNA de Aranha",
       "item.cienticraft.tubo": "Tubo de Ensaio",

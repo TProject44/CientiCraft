@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "oak_planks",
+        "1": "globo_baixo",
+        "2": "globo_cima",
+        "3": "globo_direita",
+        "4": "globo_esquerda",
+        "5": "globo_frente",
+        "6": "globo_tras"
+      },
+      "name": "default"
+    }
+  }
+}

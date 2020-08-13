@@ -1,0 +1,14 @@
+{
+  "parent": "cienticraft:custom/globo_modelo",
+  "textures": {
+    "all": "cienticraft:blocks/globo_frente",
+    "particle": "cienticraft:blocks/globo_frente",
+    "0": "cienticraft:blocks/oak_planks",
+    "1": "cienticraft:blocks/globo_baixo",
+    "2": "cienticraft:blocks/globo_cima",
+    "3": "cienticraft:blocks/globo_direita",
+    "4": "cienticraft:blocks/globo_esquerda",
+    "5": "cienticraft:blocks/globo_frente",
+    "6": "cienticraft:blocks/globo_tras"
+  }
+}

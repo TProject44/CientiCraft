@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "dna_combinador_modelo:default",
-    "rotationMode": 0,
+    "rotationMode": 1,
     "emissiveRendering": false,
     "itemTexture": "",
     "hasTransparency": true,
@@ -72,7 +72,7 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "CombinadorDNAGUI",
+    "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": true,
     "inventorySize": 3,
     "inventoryStackSize": 64,
@@ -93,9 +93,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "CombinadordeDNAUpdateTick"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

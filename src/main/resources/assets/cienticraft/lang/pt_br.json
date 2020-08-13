@@ -1,6 +1,7 @@
 {
   "item.cienticraft.sangede_raposa": "Sange de Raposa",
   "item.cienticraft.ceringaporco": "Seringa Porco DNA",
+  "item.cienticraft.ceringacontaminada": "Ceringa Contaminada",
   "item.cienticraft.ceringa": "Seringa vazia",
   "item.cienticraft.sanguede_panda": "Sangue de Panda",
   "block.cienticraft.combinadorde_dna": "Combinador de DNA",
@@ -19,6 +20,7 @@
   "item.cienticraft.tubovaca": "Tubo de Ensaio com DNA de Vaca",
   "item.cienticraft.sanguede_galinha": "Sangue de Galinha",
   "item.cienticraft.sanguede_vaca": "Sangue de Vaca",
+  "item.cienticraft.tubo_contaminado": "Tubo Contaminado",
   "item.cienticraft.ceringapanda": "Seringa com DNA de panda",
   "item.cienticraft.ceringaovelha": "Seringa com DNA de ovelha",
   "item.cienticraft.tubopanda": "Tubo de Ensaio com DNA de Panda",

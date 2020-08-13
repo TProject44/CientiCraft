@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "cienticraft:block/combinadorde_dna"
+    },
+    "facing=east": {
+      "model": "cienticraft:block/combinadorde_dna",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cienticraft:block/combinadorde_dna",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cienticraft:block/combinadorde_dna",
+      "y": 270
     }
   }
 }

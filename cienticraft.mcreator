@@ -257,18 +257,6 @@
       "registry_name": "combinadorde_dna"
     },
     {
-      "name": "QuandoAlgoForCraftado",
-      "type": "procedure",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "quando_algo_for_craftado",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "Recipetubogalinha",
       "type": "recipe",
       "sortid": 28,
@@ -474,6 +462,27 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "recipecombinadordedna"
+    },
+    {
+      "name": "QuandoAlgoForCraftado",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "quando_algo_for_craftado",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

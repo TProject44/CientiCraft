@@ -456,6 +456,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "globo"
+    },
+    {
+      "name": "Recipeglobo",
+      "type": "recipe",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipeglobo"
+    },
+    {
+      "name": "Recipecombinadordedna",
+      "type": "recipe",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipecombinadordedna"
     }
   ],
   "variable_elements": [],

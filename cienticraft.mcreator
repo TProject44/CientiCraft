@@ -101,27 +101,6 @@
       "registry_name": "ceringaporco"
     },
     {
-      "name": "ColetaDNAProcedure",
-      "type": "procedure",
-      "sortid": 10,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "coleta_dna_procedure",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "CeringaFox",
       "type": "item",
       "sortid": 13,
@@ -480,6 +459,27 @@
           {
             "name": "itemstack",
             "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ColetaCoisasDeMob",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "coleta_coisas_de_mob",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
           }
         ]
       }

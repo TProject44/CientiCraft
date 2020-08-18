@@ -146,15 +146,6 @@
       "registry_name": "tuboporco"
     },
     {
-      "name": "Tab3",
-      "type": "tab",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tab_3"
-    },
-    {
       "name": "Tubogalinha",
       "type": "item",
       "sortid": 19,
@@ -532,7 +523,6 @@
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
       "itemGroup.tabtab_2": "Utensilios",
       "item.cienticraft.tubovacacogumelo": "Tubo de Ensaio VacaCogumelo DNA",
-      "itemGroup.tabtab_3": "Tubos de Ensaio",
       "itemGroup.tabtab_4": "Decorações",
       "item.cienticraft.tuboporco": "Tubo de Ensaio PorcoDNA"
     },
@@ -572,7 +562,6 @@
       "item.cienticraft.ceringavacacogumelo": "Seringa com DNA de vaca-cogumelo",
       "itemGroup.tabtab_2": "Utensílios",
       "item.cienticraft.tubovacacogumelo": "Tubo de Ensaio com DNA de Vaca-cogumelo",
-      "itemGroup.tabtab_3": "Tubos de Ensaio",
       "itemGroup.tabtab_4": "Decorações",
       "item.cienticraft.tuboporco": "Tubo de Ensaio com DNA de Porco"
     }

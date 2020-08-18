@@ -26,7 +26,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.cienticraft.itemgroup.Tab2ItemGroup;
+import net.mcreator.cienticraft.itemgroup.Tab4ItemGroup;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 import java.util.List;
@@ -43,7 +43,7 @@ public class GloboBlock extends CienticraftModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(Tab2ItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(Tab4ItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

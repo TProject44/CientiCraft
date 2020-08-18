@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.cienticraft.itemgroup.Tab3ItemGroup;
+import net.mcreator.cienticraft.itemgroup.TAB1ItemGroup;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 @CienticraftModElements.ModElement.Tag
@@ -24,7 +24,7 @@ public class TUBOPORCOItem extends CienticraftModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(Tab3ItemGroup.tab).maxStackSize(64));
+			super(new Item.Properties().group(TAB1ItemGroup.tab).maxStackSize(64));
 			setRegistryName("tuboporco");
 		}
 

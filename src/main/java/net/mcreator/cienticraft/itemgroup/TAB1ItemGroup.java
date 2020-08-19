@@ -7,7 +7,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.cienticraft.item.CeringaporcoItem;
+import net.mcreator.cienticraft.item.Tab01Item;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 @CienticraftModElements.ModElement.Tag
@@ -22,7 +22,7 @@ public class TAB1ItemGroup extends CienticraftModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(CeringaporcoItem.block, (int) (1));
+				return new ItemStack(Tab01Item.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

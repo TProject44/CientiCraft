@@ -13,6 +13,8 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.passive.TurtleEntity;
+import net.minecraft.entity.passive.SquidEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.passive.PigEntity;
 import net.minecraft.entity.passive.PandaEntity;
@@ -20,8 +22,13 @@ import net.minecraft.entity.passive.MooshroomEntity;
 import net.minecraft.entity.passive.FoxEntity;
 import net.minecraft.entity.passive.CowEntity;
 import net.minecraft.entity.passive.ChickenEntity;
+import net.minecraft.entity.passive.CatEntity;
+import net.minecraft.entity.passive.BeeEntity;
+import net.minecraft.entity.passive.BatEntity;
 import net.minecraft.entity.monster.ZombieEntity;
 import net.minecraft.entity.monster.SpiderEntity;
+import net.minecraft.entity.monster.CreeperEntity;
+import net.minecraft.entity.monster.BlazeEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.network.play.NetworkPlayerInfo;
@@ -33,10 +40,17 @@ import net.mcreator.cienticraft.item.SanguedeVacaItem;
 import net.mcreator.cienticraft.item.SanguedePorcoItem;
 import net.mcreator.cienticraft.item.SanguedePandaItem;
 import net.mcreator.cienticraft.item.SanguedeOvelhaItem;
+import net.mcreator.cienticraft.item.SanguedeMorcegoItem;
+import net.mcreator.cienticraft.item.SanguedeLulaItem;
+import net.mcreator.cienticraft.item.SanguedeGatoItem;
 import net.mcreator.cienticraft.item.SanguedeGalinhaItem;
+import net.mcreator.cienticraft.item.SanguedeCrepeerItem;
+import net.mcreator.cienticraft.item.SanguedeBlazeItem;
+import net.mcreator.cienticraft.item.SanguedeAbelhaItem;
 import net.mcreator.cienticraft.item.SanguecoguvacaItem;
 import net.mcreator.cienticraft.item.SanguearanhaItem;
 import net.mcreator.cienticraft.item.SangedeRaposaItem;
+import net.mcreator.cienticraft.item.CeringaSangueTartarugaItem;
 import net.mcreator.cienticraft.item.CeringaItem;
 import net.mcreator.cienticraft.CienticraftModElements;
 
@@ -63,10 +77,14 @@ public class ColetaCoisasDeMobProcedure extends CienticraftModElements.ModElemen
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem())
-				&& (((entity instanceof ZombieEntity) || (entity instanceof PandaEntity))
-						|| (((entity instanceof SpiderEntity) || (entity instanceof ChickenEntity))
-								|| (((entity instanceof MooshroomEntity) || (entity instanceof SheepEntity))
-										|| ((entity instanceof FoxEntity) || ((entity instanceof PigEntity) || (entity instanceof CowEntity)))))))) {
+				&& (((entity instanceof ZombieEntity) || (entity instanceof PandaEntity)) || (((entity instanceof SpiderEntity)
+						|| (entity instanceof ChickenEntity))
+						|| (((entity instanceof MooshroomEntity) || (entity instanceof SheepEntity))
+								|| (((entity instanceof FoxEntity) || ((entity instanceof PigEntity) || (entity instanceof CowEntity)))
+										|| (((entity instanceof BeeEntity) || (entity instanceof CatEntity))
+												|| (((entity instanceof BatEntity) || (entity instanceof BlazeEntity))
+														|| (((entity instanceof CreeperEntity) || (entity instanceof FoxEntity))
+																|| ((entity instanceof SquidEntity) || (entity instanceof TurtleEntity))))))))))) {
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 2);
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SLOWNESS, (int) 6000, (int) 5, (true), (true)));
@@ -305,6 +323,214 @@ public class ColetaCoisasDeMobProcedure extends CienticraftModElements.ModElemen
 			}
 			if (sourceentity instanceof PlayerEntity) {
 				ItemStack _setstack = new ItemStack(SangedeRaposaItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof BeeEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SanguedeAbelhaItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof CatEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SanguedeGatoItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof BatEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SanguedeMorcegoItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof BlazeEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SanguedeBlazeItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof CreeperEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SanguedeCrepeerItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof FoxEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SangedeRaposaItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof SquidEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(SanguedeLulaItem.block, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+			}
+		}
+		if (((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == new ItemStack(CeringaItem.block, (int) (1)).getItem()) && (entity instanceof TurtleEntity))) {
+			if ((new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.SURVIVAL;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((ClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.SURVIVAL;
+					}
+					return false;
+				}
+			}.checkGamemode(sourceentity))) {
+				if (sourceentity instanceof PlayerEntity)
+					((PlayerEntity) sourceentity).inventory.clearMatchingItems(
+							p -> ((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
+									.getItem() == p.getItem(),
+							(int) 1);
+			}
+			if (sourceentity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(CeringaSangueTartarugaItem.block, (int) (1));
 				_setstack.setCount((int) 1);
 				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
 			}

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "test_tube_-_zumbi",
+    "texture": "syringe_-sangue_zombie",
     "customModelName": "Normal",
-    "name": "Tubo com Sangue de Creeper",
+    "name": "Sangue de Guardian",
     "creativeTab": {
       "value": "CUSTOM:TAB1"
     },

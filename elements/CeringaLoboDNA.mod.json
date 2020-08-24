@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "test_tube_-_zumbi",
+    "texture": "syringe_-_wolf",
     "customModelName": "Normal",
-    "name": "Tubo com Sangue de Creeper",
+    "name": "Ceringa Lobo DNA",
     "creativeTab": {
       "value": "CUSTOM:TAB1"
     },

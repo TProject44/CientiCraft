@@ -1,0 +1,10 @@
+{
+  "parent": "cienticraft:custom/limpador_de_utencilios_cheio_modelo",
+  "textures": {
+    "all": "cienticraft:blocks/agua0",
+    "particle": "cienticraft:blocks/agua0",
+    "0": "cienticraft:blocks/iron_block",
+    "1": "cienticraft:blocks/agua0",
+    "missing": "cienticraft:blocks/"
+  }
+}

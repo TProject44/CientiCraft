@@ -1,0 +1,13 @@
+{
+  "parent": "cienticraft:custom/extrator_de_dna_modelo_(1)",
+  "textures": {
+    "all": "cienticraft:blocks/furnace_top",
+    "particle": "cienticraft:blocks/furnace_top",
+    "0": "cienticraft:blocks/texture4",
+    "1": "cienticraft:blocks/iron_block",
+    "2": "cienticraft:blocks/red_concrete_powder",
+    "3": "cienticraft:blocks/furnace_top",
+    "4": "cienticraft:blocks/glass_white",
+    "missing": "cienticraft:blocks/"
+  }
+}

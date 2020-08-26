@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iron_block",
+        "1": "agua0",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

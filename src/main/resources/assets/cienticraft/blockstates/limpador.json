@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cienticraft:block/limpador"
+    },
+    "facing=east": {
+      "model": "cienticraft:block/limpador",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cienticraft:block/limpador",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cienticraft:block/limpador",
+      "y": 270
+    }
+  }
+}

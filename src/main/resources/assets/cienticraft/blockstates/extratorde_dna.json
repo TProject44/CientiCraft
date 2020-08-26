@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cienticraft:block/extratorde_dna"
+    },
+    "facing=east": {
+      "model": "cienticraft:block/extratorde_dna",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cienticraft:block/extratorde_dna",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cienticraft:block/extratorde_dna",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "cienticraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "cienticraft:ceringa_morcego"
+    },
+    "1": {
+      "item": "cienticraft:tubo"
+    }
+  },
+  "result": {
+    "item": "cienticraft:tubomorcego",
+    "count": 1
+  }
+}

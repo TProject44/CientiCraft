@@ -1,5 +1,5 @@
 {
-  "parent": "cienticraft:block/extratorde_dna",
+  "parent": "cienticraft:block/extrator_de_dna",
   "display": {
     "thirdperson": {
       "rotation": [

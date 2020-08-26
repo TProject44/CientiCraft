@@ -1,0 +1,19 @@
+{
+  "group": "cienticraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "cienticraft:ceringa_abelha_dna"
+    },
+    "1": {
+      "item": "cienticraft:tubo"
+    }
+  },
+  "result": {
+    "item": "cienticraft:tuboabelha",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "cienticraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "cienticraft:sanguede_crepeer"
+    },
+    "1": {
+      "item": "cienticraft:tubo"
+    }
+  },
+  "result": {
+    "item": "cienticraft:tubocom_sanguede_crepeer",
+    "count": 1
+  }
+}

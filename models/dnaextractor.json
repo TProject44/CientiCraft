@@ -1,12 +1,12 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "texturas/texture4",
-		"1": "limpador de utensilios/iron_block",
-		"2": "CientiCraft:estrator de dna/red_concrete_powder",
-		"3": "estrator de dna/furnace_top",
-		"4": "estrator de dna/glass_white",
-		"particle": "texturas/texture4"
+		"0": "dna extractor/texture4",
+		"1": "dna extractor/iron_block",
+		"2": "CientiCraft:dna extractor/red_concrete_powder",
+		"3": "dna extractor/furnace_top",
+		"4": "dna extractor/glass_white",
+		"particle": "dna extractor/texture4"
 	},
 	"elements": [
 		{

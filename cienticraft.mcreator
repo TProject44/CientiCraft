@@ -872,15 +872,6 @@
       "registry_name": "limpadorrecipe"
     },
     {
-      "name": "ExtratordeDNA",
-      "type": "block",
-      "sortid": 99,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "extratorde_dna"
-    },
-    {
       "name": "Extratorrecipe",
       "type": "recipe",
       "sortid": 100,
@@ -888,6 +879,186 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "extratorrecipe"
+    },
+    {
+      "name": "SangueGalinha",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_galinha"
+    },
+    {
+      "name": "SangueVaca",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_vaca"
+    },
+    {
+      "name": "ExtratorDeDNA",
+      "type": "block",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "extrator_de_dna"
+    },
+    {
+      "name": "SanguePorco",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_porco"
+    },
+    {
+      "name": "SangueTartaruga",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_tartaruga"
+    },
+    {
+      "name": "SangueCreeper",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_creeper"
+    },
+    {
+      "name": "SangueLula",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_lula"
+    },
+    {
+      "name": "SangueGolfinho",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_golfinho"
+    },
+    {
+      "name": "SangueLobo",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_lobo"
+    },
+    {
+      "name": "SangueGuardian",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sangue_guardian"
+    },
+    {
+      "name": "Recipetubomorcego",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubomorcego"
+    },
+    {
+      "name": "Recipetuboblaze",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboblaze"
+    },
+    {
+      "name": "Recipetuboabelha",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboabelha"
+    },
+    {
+      "name": "Recipetubogato",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubogato"
+    },
+    {
+      "name": "Recipetubotartaruga",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubotartaruga"
+    },
+    {
+      "name": "Recipetuboguardian",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetuboguardian"
+    },
+    {
+      "name": "Recipetubolobo",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubolobo"
+    },
+    {
+      "name": "Recipetubogolfinho",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubogolfinho"
+    },
+    {
+      "name": "Recipetubocreeper",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubocreeper"
+    },
+    {
+      "name": "Recipetubolula",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "recipetubolula"
     }
   ],
   "variable_elements": [],
@@ -921,6 +1092,7 @@
       "item.cienticraft.ceringa_abelha_dna": "Ceringa Abelha DNA",
       "item.cienticraft.sanguede_lobo": "Sangue de Lobo",
       "item.cienticraft.tubo_sanguede_vaca": "Tubo com Sangue de Vaca",
+      "block.cienticraft.extrator_de_dna": "Extrator De DNA",
       "item.cienticraft.tubogalinha": "Tubo de Ensaio GalinhaDNA",
       "item.cienticraft.ceringa_sangue_tartaruga": " Sangue de Tartaruga",
       "item.cienticraft.tuboblaze": "Tubo de Ensaio BlazeDNA",
@@ -935,7 +1107,6 @@
       "itemGroup.tabtab_2": "Utensilios",
       "item.cienticraft.ceringavacacogumelo": "Ceringa VacaCogumelo DNA",
       "itemGroup.tabtab_4": "Decorações",
-      "block.cienticraft.extratorde_dna": "Extrator de DNA",
       "item.cienticraft.tuboporco": "Tubo de Ensaio PorcoDNA",
       "item.cienticraft.tubocom_sanguede_tartaruga": "Tubo com Sangue de Tartaruga",
       "item.cienticraft.sangede_raposa": "Sange de Raposa",
@@ -1002,6 +1173,7 @@
       "item.cienticraft.ceringa_abelha_dna": "Ceringa Abelha DNA",
       "item.cienticraft.sanguede_lobo": "Sangue de Lobo",
       "item.cienticraft.tubo_sanguede_vaca": "Tubo com Sangue de Vaca",
+      "block.cienticraft.extrator_de_dna": "Extrator De DNA",
       "item.cienticraft.tubogalinha": "Tubo de Ensaio com DNA de Galinha",
       "item.cienticraft.ceringa_sangue_tartaruga": "Ceringa Sangue Tartaruga",
       "item.cienticraft.tuboblaze": "Tubo de Ensaio BlazeDNA",
@@ -1016,7 +1188,6 @@
       "item.cienticraft.tubovacacogumelo": "Tubo de Ensaio com DNA de Vaca-cogumelo",
       "item.cienticraft.ceringa_blaze_dna": "Ceringa Blaze DNA",
       "itemGroup.tabtab_4": "Decorações",
-      "block.cienticraft.extratorde_dna": "Extrator de DNA",
       "item.cienticraft.tuboporco": "Tubo de Ensaio com DNA de Porco",
       "item.cienticraft.tubocom_sanguede_tartaruga": "Tubo com Sangue de Tartaruga",
       "item.cienticraft.sangede_raposa": "Sange de Raposa",

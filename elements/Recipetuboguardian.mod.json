@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ceringa"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:CeringaGuardianDNA"
       },
       {
         "value": "CUSTOM:Tubo"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ceringacontaminada"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ExtratorDeDNA"
+      "value": "CUSTOM:Tuboguardian"
     },
-    "name": "extratorrecipe",
+    "name": "recipetuboguardian",
     "namespace": "mod"
   }
 }

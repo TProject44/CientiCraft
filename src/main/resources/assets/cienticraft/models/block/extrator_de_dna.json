@@ -1,5 +1,5 @@
 {
-  "parent": "cienticraft:custom/extrator_de_dna_modelo_(2)",
+  "parent": "cienticraft:custom/dnaextractor",
   "textures": {
     "all": "cienticraft:blocks/iron_block",
     "particle": "cienticraft:blocks/iron_block",

@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ceringa"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:CeringaSangueTartaruga"
       },
       {
         "value": "CUSTOM:Tubo"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ceringacontaminada"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ExtratorDeDNA"
+      "value": "CUSTOM:TubocomSanguedeTartaruga"
     },
-    "name": "extratorrecipe",
+    "name": "sangue_tartaruga",
     "namespace": "mod"
   }
 }

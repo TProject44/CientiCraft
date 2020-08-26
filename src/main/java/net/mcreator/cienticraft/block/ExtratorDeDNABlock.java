@@ -2,7 +2,9 @@
 package net.mcreator.cienticraft.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IBlockReader;
@@ -16,38 +18,50 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.cienticraft.itemgroup.Tab2ItemGroup;
+import net.mcreator.cienticraft.itemgroup.TAB1ItemGroup;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 import java.util.List;
 import java.util.Collections;
 
 @CienticraftModElements.ModElement.Tag
-public class ExtratordeDNABlock extends CienticraftModElements.ModElement {
-	@ObjectHolder("cienticraft:extratorde_dna")
+public class ExtratorDeDNABlock extends CienticraftModElements.ModElement {
+	@ObjectHolder("cienticraft:extrator_de_dna")
 	public static final Block block = null;
-	public ExtratordeDNABlock(CienticraftModElements instance) {
-		super(instance, 99);
+	public ExtratorDeDNABlock(CienticraftModElements instance) {
+		super(instance, 103);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(Tab2ItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(TAB1ItemGroup.tab)).setRegistryName(block.getRegistryName()));
+	}
+
+	@Override
+	@OnlyIn(Dist.CLIENT)
+	public void clientLoad(FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).harvestLevel(2)
-					.harvestTool(ToolType.PICKAXE));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("extratorde_dna");
+			setRegistryName("extrator_de_dna");
+		}
+
+		@Override
+		public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			return false;
 		}
 
 		@Override

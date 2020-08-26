@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ceringa"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": "CUSTOM:SanguedeGolfinho"
       },
       {
         "value": "CUSTOM:Tubo"
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       },
       {
-        "value": "CUSTOM:Ceringacontaminada"
+        "value": ""
       },
       {
-        "value": "Blocks.IRON_BLOCK"
+        "value": ""
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ExtratorDeDNA"
+      "value": "CUSTOM:TubocomSanguedeGolfinho"
     },
-    "name": "extratorrecipe",
+    "name": "sangue_golfinho",
     "namespace": "mod"
   }
 }

@@ -845,15 +845,6 @@
       "registry_name": "tubolobo"
     },
     {
-      "name": "CombinadordeDnaGUI",
-      "type": "gui",
-      "sortid": 95,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "combinadorde_dna_gui"
-    },
-    {
       "name": "Limpador",
       "type": "block",
       "sortid": 96,
@@ -890,13 +881,13 @@
       "registry_name": "extratorde_dna"
     },
     {
-      "name": "Extratordednarecipe",
+      "name": "Extratorrecipe",
       "type": "recipe",
       "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "extratordednarecipe"
+      "registry_name": "extratorrecipe"
     }
   ],
   "variable_elements": [],

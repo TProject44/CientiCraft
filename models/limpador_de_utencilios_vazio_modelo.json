@@ -89,5 +89,18 @@
 				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
 			}
 		}
-	]
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 3.25, 0],
+			"scale": [0.59, 0.59, 0.59]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0]
+		},
+		"gui": {
+			"rotation": [0, -44, 0],
+			"scale": [0.78, 0.77, 0.73]
+		}
+	}
 }

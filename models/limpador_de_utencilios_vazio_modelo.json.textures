@@ -3,7 +3,7 @@
     "default": {
       "map": {
         "0": "iron_block",
-        "missing": "iron_block"
+        "missing": ""
       },
       "name": "default"
     }

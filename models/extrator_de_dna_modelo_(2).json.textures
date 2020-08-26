@@ -6,8 +6,7 @@
         "1": "iron_block",
         "2": "red_concrete_powder",
         "3": "furnace_top",
-        "4": "glass_white",
-        "missing": ""
+        "4": "glass_white"
       },
       "name": "default"
     }

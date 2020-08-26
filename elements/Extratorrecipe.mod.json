@@ -22,16 +22,16 @@
         "value": "Blocks.IRON_BLOCK"
       },
       {
-        "value": "CUSTOM:Ceringacontaminada"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
-        "value": "Blocks.IRON_BLOCK"
-      },
-      {
         "value": "CUSTOM:Tubo"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "CUSTOM:Ceringacontaminada"
       },
       {
         "value": "Blocks.IRON_BLOCK"
@@ -40,7 +40,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:ExtratordeDNA"
     },
-    "name": "extratordednarecipe",
+    "name": "extratorrecipe",
     "namespace": "mod"
   }
 }

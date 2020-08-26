@@ -4,6 +4,6 @@
     "all": "cienticraft:blocks/iron_block",
     "particle": "cienticraft:blocks/iron_block",
     "0": "cienticraft:blocks/iron_block",
-    "missing": "cienticraft:blocks/iron_block"
+    "missing": "cienticraft:blocks/"
   }
 }

@@ -1,0 +1,35 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "combinador_de_dna.png",
+          "name": "combinador_de_dna.png",
+          "x": 84,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Combinador de DNA",
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "name": "Combinador de DNA",
+          "x": 311,
+          "y": 55
+        }
+      }
+    ]
+  }
+}

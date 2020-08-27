@@ -1,0 +1,94 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "combinador_de_dna_-_copia.png",
+          "name": "combinador_de_dna_-_copia.png",
+          "x": 83,
+          "y": 27
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 277,
+          "y": 64
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 277,
+          "y": 161
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 496,
+          "y": 113
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "COMBINAR",
+          "width": 160,
+          "height": 40,
+          "name": "COMBINAR",
+          "x": 314,
+          "y": 199
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "upgradetableiconplus.png",
+          "name": "upgradetableiconplus.png",
+          "x": 287,
+          "y": 121
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Combinador de DNA",
+          "color": {
+            "value": -10066330,
+            "falpha": 0.0
+          },
+          "name": "Combinador de DNA",
+          "x": 317,
+          "y": 30
+        }
+      }
+    ]
+  }
+}

@@ -1101,15 +1101,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "centrifugador"
-    },
-    {
-      "name": "GUIcombinador",
-      "type": "gui",
-      "sortid": 123,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "gu_icombinador"
     }
   ],
   "variable_elements": [],

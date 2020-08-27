@@ -26,7 +26,7 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.cienticraft.itemgroup.TAB1ItemGroup;
+import net.mcreator.cienticraft.itemgroup.Tab2ItemGroup;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 import java.util.List;
@@ -43,7 +43,7 @@ public class ExtratorDeDNABlock extends CienticraftModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(TAB1ItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(Tab2ItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class ExtratorDeDNABlock extends CienticraftModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
 			setRegistryName("extrator_de_dna");
 		}

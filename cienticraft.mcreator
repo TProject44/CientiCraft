@@ -1106,7 +1106,7 @@
       "name": "GUIcombinador",
       "type": "gui",
       "sortid": 123,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "gu_icombinador"

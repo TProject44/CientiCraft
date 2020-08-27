@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cienticraft:block/centrifugador"
+    },
+    "facing=east": {
+      "model": "cienticraft:block/centrifugador",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cienticraft:block/centrifugador",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cienticraft:block/centrifugador",
+      "y": 270
+    }
+  }
+}

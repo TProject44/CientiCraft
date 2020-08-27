@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "texture4",
+        "1": "furnace_top",
+        "2": "iron_block",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

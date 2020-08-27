@@ -1,0 +1,11 @@
+{
+  "parent": "cienticraft:custom/sentrifugador_aberto_modelo_(1)",
+  "textures": {
+    "all": "cienticraft:blocks/iron_block",
+    "particle": "cienticraft:blocks/iron_block",
+    "0": "cienticraft:blocks/texture4",
+    "1": "cienticraft:blocks/furnace_top",
+    "2": "cienticraft:blocks/iron_block",
+    "missing": "cienticraft:blocks/"
+  }
+}

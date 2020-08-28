@@ -1119,6 +1119,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "git"
+    },
+    {
+      "name": "CombinadordeDNAUpdateTick",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "combinadorde_dna_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CombinadorDNAGUI",
+      "type": "gui",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "combinador_dnagui"
     }
   ],
   "variable_elements": [],

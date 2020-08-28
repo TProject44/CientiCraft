@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,7 +16,9 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
@@ -36,6 +39,7 @@ import net.minecraft.tileentity.LockableLootTileEntity;
 import net.minecraft.state.StateContainer;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.network.play.server.SUpdateTileEntityPacket;
+import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
@@ -44,10 +48,10 @@ import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.container.ChestContainer;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
@@ -58,14 +62,21 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.cienticraft.procedures.CombinadordeDNAUpdateTickProcedure;
 import net.mcreator.cienticraft.itemgroup.Tab2ItemGroup;
+import net.mcreator.cienticraft.gui.CombinadorDNAGUIGui;
 import net.mcreator.cienticraft.CienticraftModElements;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
+
+import io.netty.buffer.Unpooled;
 
 @CienticraftModElements.ModElement.Tag
 public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
@@ -130,6 +141,11 @@ public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
 		}
 
 		@Override
+		public int tickRate(IWorldReader world) {
+			return 100;
+		}
+
+		@Override
 		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
 			builder.add(FACING);
 		}
@@ -156,12 +172,52 @@ public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
 		}
 
 		@Override
+		public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(state, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				CombinadordeDNAUpdateTickProcedure.executeProcedure($_dependencies);
+			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@Override
 		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
 				BlockRayTraceResult hit) {
 			super.onBlockActivated(state, world, pos, entity, hand, hit);
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
+			if (entity instanceof ServerPlayerEntity) {
+				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
+					@Override
+					public ITextComponent getDisplayName() {
+						return new StringTextComponent("Combinador de DNA");
+					}
+
+					@Override
+					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
+						return new CombinadorDNAGUIGui.GuiContainerMod(id, inventory,
+								new PacketBuffer(Unpooled.buffer()).writeBlockPos(new BlockPos(x, y, z)));
+					}
+				}, new BlockPos(x, y, z));
+			}
 			return ActionResultType.SUCCESS;
 		}
 
@@ -216,7 +272,7 @@ public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -279,7 +335,7 @@ public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
 
 		@Override
 		public Container createMenu(int id, PlayerInventory player) {
-			return ChestContainer.createGeneric9X3(id, player, this);
+			return new CombinadorDNAGUIGui.GuiContainerMod(id, player, new PacketBuffer(Unpooled.buffer()).writeBlockPos(this.getPos()));
 		}
 
 		@Override
@@ -299,10 +355,6 @@ public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
-			if (index == 0)
-				return false;
-			if (index == 1)
-				return false;
 			return true;
 		}
 
@@ -318,8 +370,6 @@ public class CombinadordeDNABlock extends CienticraftModElements.ModElement {
 
 		@Override
 		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
-			if (index == 2)
-				return false;
 			return true;
 		}
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());

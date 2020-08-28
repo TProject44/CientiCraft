@@ -1112,13 +1112,42 @@
       "registry_name": "ceringa_cow_pig_dna"
     },
     {
-      "name": "GUIcombinador",
+      "name": "CombinadorDNAGUI",
       "type": "gui",
-      "sortid": 123,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "gu_icombinador"
+      "registry_name": "combinador_dnagui"
+    },
+    {
+      "name": "CombinadordeDNAUpdateTick",
+      "type": "procedure",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "combinadorde_dna_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

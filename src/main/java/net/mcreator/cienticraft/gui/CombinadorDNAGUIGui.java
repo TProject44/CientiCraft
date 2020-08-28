@@ -30,7 +30,6 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.Minecraft;
@@ -43,11 +42,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @CienticraftModElements.ModElement.Tag
-public class GUIcombinadorGui extends CienticraftModElements.ModElement {
+public class CombinadorDNAGUIGui extends CienticraftModElements.ModElement {
 	public static HashMap guistate = new HashMap();
 	private static ContainerType<GuiContainerMod> containerType = null;
-	public GUIcombinadorGui(CienticraftModElements instance) {
-		super(instance, 123);
+	public CombinadorDNAGUIGui(CienticraftModElements instance) {
+		super(instance, 124);
 		elements.addNetworkMessage(ButtonPressedMessage.class, ButtonPressedMessage::buffer, ButtonPressedMessage::new,
 				ButtonPressedMessage::handler);
 		elements.addNetworkMessage(GUISlotChangedMessage.class, GUISlotChangedMessage::buffer, GUISlotChangedMessage::new,
@@ -63,7 +62,7 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerContainer(RegistryEvent.Register<ContainerType<?>> event) {
-		event.getRegistry().register(containerType.setRegistryName("gu_icombinador"));
+		event.getRegistry().register(containerType.setRegistryName("combinador_dnagui"));
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -82,7 +81,7 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(3);
+			this.internal = new ItemStackHandler(4);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -120,11 +119,17 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 14, -4) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 154, 7) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 14, 44) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 13) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 123, 20) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 16, 63) {
+			}));
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 126, 38) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
@@ -134,9 +139,9 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 			int sj;
 			for (si = 0; si < 3; ++si)
 				for (sj = 0; sj < 9; ++sj)
-					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+					this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 13 + 84 + si * 18));
 			for (si = 0; si < 9; ++si)
-				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+				this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 13 + 142));
 		}
 
 		public Map<Integer, Slot> get() {
@@ -155,18 +160,18 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 3) {
-					if (!this.mergeItemStack(itemstack1, 3, this.inventorySlots.size(), true)) {
+				if (index < 4) {
+					if (!this.mergeItemStack(itemstack1, 4, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 3, false)) {
-					if (index < 3 + 27) {
-						if (!this.mergeItemStack(itemstack1, 3 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 4, false)) {
+					if (index < 4 + 27) {
+						if (!this.mergeItemStack(itemstack1, 4 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 3, 3 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 4, 4 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -304,9 +309,9 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 			this.z = container.z;
 			this.entity = container.entity;
 			this.xSize = 176;
-			this.ySize = 166;
+			this.ySize = 191;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("cienticraft:textures/gu_icombinador.png");
+		private static final ResourceLocation texture = new ResourceLocation("cienticraft:textures/combinador_dnagui.png");
 		@Override
 		public void render(int mouseX, int mouseY, float partialTicks) {
 			this.renderBackground();
@@ -321,10 +326,10 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
 			this.blit(k, l, 0, 0, this.xSize, this.ySize);
-			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("cienticraft:textures/combinador_de_dna_-_copia.png"));
-			this.blit(this.guiLeft + -84, this.guiTop + -23, 0, 0, 256, 256);
+			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("cienticraft:textures/combinador_de_dna_-_2copia.png"));
+			this.blit(this.guiLeft + -76, this.guiTop + -8, 0, 0, 256, 256);
 			Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("cienticraft:textures/upgradetableiconplus.png"));
-			this.blit(this.guiLeft + 18, this.guiTop + 24, 0, 0, 256, 256);
+			this.blit(this.guiLeft + 21, this.guiTop + 43, 0, 0, 256, 256);
 		}
 
 		@Override
@@ -343,7 +348,6 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
-			this.font.drawString("Combinador de DNA", 33, -22, -10066330);
 		}
 
 		@Override
@@ -356,10 +360,6 @@ public class GUIcombinadorGui extends CienticraftModElements.ModElement {
 		public void init(Minecraft minecraft, int width, int height) {
 			super.init(minecraft, width, height);
 			minecraft.keyboardListener.enableRepeatEvents(true);
-			this.addButton(new Button(this.guiLeft + 32, this.guiTop + 63, 80, 20, "COMBINAR", e -> {
-				CienticraftMod.PACKET_HANDLER.sendToServer(new ButtonPressedMessage(0, x, y, z));
-				handleButtonAction(entity, 0, x, y, z);
-			}));
 		}
 	}
 

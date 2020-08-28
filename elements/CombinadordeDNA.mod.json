@@ -43,7 +43,7 @@
     "material": {
       "value": "IRON"
     },
-    "tickRate": 10,
+    "tickRate": 100,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -72,19 +72,14 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "CombinadorDNAGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 3,
+    "inventorySize": 4,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [
-      0,
-      1
-    ],
-    "inventoryInSlotIDs": [
-      2
-    ],
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,
@@ -93,6 +88,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "CombinadordeDNAUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

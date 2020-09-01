@@ -1186,6 +1186,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Git",
+      "type": "item",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "git"
     }
   ],
   "variable_elements": [],
@@ -1210,6 +1219,7 @@
       "item.cienticraft.ceringaaranha": "Ceringa Aranha DNA",
       "item.cienticraft.sanguearanha": "Sangue de Aranha",
       "item.cienticraft.ceringagalinha": "Ceringa Galinha DNA",
+      "item.cienticraft.git": "Git",
       "item.cienticraft.tuboovelha": "Tubo de Ensaio OvelhaDNA",
       "item.cienticraft.tubovaca": "Tubo de Ensaio VacaDNA",
       "item.cienticraft.sanguede_galinha": "Sangue de Galinha",
@@ -1293,6 +1303,7 @@
       "item.cienticraft.ceringaaranha": "Seringa com DNA de aranha",
       "item.cienticraft.sanguearanha": "Sangue de Aranha",
       "item.cienticraft.ceringagalinha": "Seringa com DNA de galinha",
+      "item.cienticraft.git": "Git",
       "item.cienticraft.tuboovelha": "Tubo de Ensaio com DNA de Ovelha",
       "item.cienticraft.tubovaca": "Tubo de Ensaio com DNA de Vaca",
       "item.cienticraft.sanguede_galinha": "Sangue de Galinha",

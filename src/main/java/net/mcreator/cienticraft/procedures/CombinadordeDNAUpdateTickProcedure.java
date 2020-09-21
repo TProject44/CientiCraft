@@ -1,11 +1,27 @@
 package net.mcreator.cienticraft.procedures;
 
+import net.minecraftforge.items.IItemHandlerModifiable;
+import net.minecraftforge.items.CapabilityItemHandler;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.item.ItemStack;
+
+import net.mcreator.cienticraft.item.CeringavacaItem;
+import net.mcreator.cienticraft.item.CeringaporcoItem;
+import net.mcreator.cienticraft.item.CeringacontaminadaItem;
+import net.mcreator.cienticraft.item.CeringaCowPigDNAItem;
+import net.mcreator.cienticraft.CienticraftModElements;
+
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.Map;
+
 @CienticraftModElements.ModElement.Tag
 public class CombinadordeDNAUpdateTickProcedure extends CienticraftModElements.ModElement {
-
 	public CombinadordeDNAUpdateTickProcedure(CienticraftModElements instance) {
 		super(instance, 125);
-
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -25,12 +41,10 @@ public class CombinadordeDNAUpdateTickProcedure extends CienticraftModElements.M
 			System.err.println("Failed to load dependency world for procedure CombinadordeDNAUpdateTick!");
 			return;
 		}
-
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((((new Object() {
 			public ItemStack getItemStack(BlockPos pos, int sltid) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -157,7 +171,5 @@ public class CombinadordeDNAUpdateTickProcedure extends CienticraftModElements.M
 				}
 			}
 		}
-
 	}
-
 }

@@ -1148,44 +1148,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "combinador_dnagui"
-    },
-    {
-      "name": "ExtratorDNA",
-      "type": "gui",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "extrator_dna"
-    },
-    {
-      "name": "ExtratorDeDNAUpdateTick",
-      "type": "procedure",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "extrator_de_dna_update_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],
